@@ -11,11 +11,6 @@ interface Todo {
 axios.get(url).then(res => {
     const todo = res.data as Todo;
 
-    //Todos have the following attributes:
-    //id
-    //title
-    //completed
-
     const id = todo.id;
     const title = todo.title;
     const completed = todo.completed;
